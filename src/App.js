@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Navbar from './components/Navbar.js'
 import Textarea from './components/textform.js'
-import Alert from './components/Alert.js'
+// import Alert from './components/Alert.js'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About.js'
 
@@ -24,7 +24,7 @@ function App() {
     <>
     <Router>
       <Navbar title="NAVBAR" info="About" mode={mode} togglemode={Togglemode} chtext={chtext} />
-      <Alert alert="Click switch button to change LIGHT to DARK and DARK to LIGHT mode"/>
+      {/* <Alert alert="Click switch button to change LIGHT to DARK and DARK to LIGHT mode"/> */}
       <Routes>
          <Route path="/" element={ <div className="container" style={{ color :mode === "light"?"black":"white"}}><h3>welcome to my First project</h3> </div>}/>
          <Route path="/Texting" element={<Textarea mode={mode} heading="ENTER TEXT HERE"/>}/> 

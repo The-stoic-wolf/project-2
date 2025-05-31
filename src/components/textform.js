@@ -29,7 +29,7 @@ export default function Textarea(props) {
           </div>
      <button disabled={text.length===0} className="btn btn-primary" onClick={handleUPclick}>UPPERCASE</button>
      <button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={handleLOWclick}>LOWERCASE</button>
-     <button disabled={text.length===0} className="btn btn-primary mx-2 my-1" onClick={handleDELclick}>DELETE</button>
+     <button disabled={text.length===0} className="btn btn-primary  my-1" onClick={handleDELclick}>DELETE</button>
     </div>
      <div className="container" style={{color: props.mode === 'light'?'black':'white'}}>
        <h2>Your text summary</h2>
